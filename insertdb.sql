@@ -1,0 +1,202 @@
+insert into community values (701, 'City View', '5207146546',6),(702, 'Sunhill', '5207146536',5), (703, 'Park Side', '5207147546',4),(704, 'Sun Side', '5206146546',5);
+
+insert into office values(301,'Church','2A','6610714652'),(302,'concord','3B','7610814652'),(303,'Hampden','4C','6623714652'),(304,'oxford','5D','6610714612');
+
+insert into employee values (881, 'Song', '2/1/2021', 'Leasing', 301);
+insert into employee values (882, 'Loic', '12/1/2020', 'Leasing',302);
+insert into employee values (883, 'Gaetane', '5/20/2021', 'Leasing',302);
+insert into employee values (884, 'Stevina', '6/22/2021', 'Leasing',303);
+insert into employee values (885, 'Song', '3/25/2021', 'Leasing',303);
+insert into employee values (886, 'Maelys', '7/27/2021', 'Leasing',304);
+insert into employee values (887, 'Yu', '2/7/2021', 'Recreation',302);
+insert into employee values (888, 'Maelys', '2/16/2021', 'Recreation',303);
+insert into employee values (889, 'Becassine', '8/16/2021', 'Recreation',301);
+insert into employee values (8810, 'Wa', '8/18/2021', 'Recreation',304);
+insert into employee values (8811, 'Melinda', '3/21/2021', 'Recreation',301);
+insert into employee values (8812, 'Celine', '5/8/2021', 'Recreation',304);
+insert into employee values (8813, 'Tang', '5/11/2021', 'Cleaning',301);
+insert into employee values (8814, 'Simplifies', '10/10/2021', 'Cleaning',301);
+insert into employee values (8815, 'Ruo', '9/10/2021', 'Cleaning',302);
+insert into employee values (8816, 'Felicie', '9/22/2021', 'Cleaning',302);
+insert into employee values (8817, 'Methode', '7/19/2021', 'Cleaning',303);
+insert into employee values (8818, 'Leana', '7/13/2021', 'Cleaning',303);
+insert into employee values (8819, 'Berangere', '12/21/2020', 'Cleaning',304);
+insert into employee values (8820, 'Esteve', '6/10/2021', 'Cleaning',304);
+
+
+insert into apartment values (991, '1bhk', 4, 'church',701);
+insert into apartment values (992, '2bhk', 6, 'oxford',704);
+insert into apartment values (993, 'studio',1, 'concord',702);
+insert into apartment values (994, '1bhk',5,'church',701);
+insert into apartment values (995, '1bhk', 3, 'hampden',703);
+insert into apartment values (996, '2bhk', 7, 'concord',702);
+insert into apartment values (997, '1bhk', 3, 'church',701);
+insert into apartment values (998, '2bhk', 8, 'concord',702);
+insert into apartment values (999, 'studio', 2,'oxford',704);
+insert into apartment values (9910, '1bhk', 5,'hampden',703);
+insert into apartment values (9911, '2bhk', 9, 'concord',702);
+insert into apartment values (9912, '2bhk', 8, 'oxford',704);
+insert into apartment values (9913, 'studio', 3,'church',701);
+insert into apartment values (9914, '1bhk', 2, 'concord',702);
+insert into apartment values (9915, '2bhk', 7, 'hampden',703);
+insert into apartment values (9916, 'studio', 1,'oxford',704);
+insert into apartment values (9917, '1bhk',4,'church',701);
+insert into apartment values (9918, '1bhk', 2, 'oxford',704);
+insert into apartment values (9919, 'studio', 3,'church',701);
+insert into apartment values (9920, 'studio',1, 'hampden',703);
+
+
+
+insert into resident values (551, 'Bianka', '12/4/2000', 991, 'female');
+insert into resident values (552, 'Maddy', '2/23/2001', 992, 'male');
+insert into resident values (553, 'Yardley', '8/26/2001',993, 'male');
+insert into resident values (554, 'Rheba', '9/20/2001', 994, 'female');
+insert into resident values (555, 'Obadiah', '9/28/2001',995, 'male');
+insert into resident values (556, 'Beryl', '10/12/2001',996, 'female');
+insert into resident values (557, 'Maure', '1/19/2001',997, 'male');
+insert into resident values (558, 'Cairis', '1/24/2001',998, 'female');
+insert into resident values (559, 'Zacharias', '8/30/2001', 999, 'male');
+insert into resident values (5510, 'Antons', '11/30/2000',9910, 'male');
+insert into resident values (5511, 'Gery', '4/10/2001', 9911, 'male');
+insert into resident values (5512, 'Gaspard', '3/7/2001', 9912, 'male');
+insert into resident values (5513, 'Nicolea', '2/12/2001',9913, 'female');
+insert into resident values (5514, 'Randie', '6/25/2001',9914, 'female');
+insert into resident values (5515, 'Pattin', '10/21/2001', 9915, 'male');
+insert into resident values (5516, 'Elwyn', '7/29/2001', 9916, 'female');
+insert into resident values (5517, 'Yevette', '2/11/2001', 9917, 'male');
+insert into resident values (5518, 'Bucky', '10/17/2001', 9918, 'female');
+insert into resident values (5519, 'Sarette', '3/4/2001', 9919, 'male');
+insert into resident values (5520, 'Genny', '2/11/2001', 9920, 'female');
+
+
+insert into payment_account (p_id,method,p_date,amount,res_id) values (331,'cash', '3/6/2021', 500,551);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (332,'card', '5/11/2021', 500,552);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (333,'online', '6/22/2021', 500,553);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (334,'cash', '12/16/2020', 500,554);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (335,'card', '12/13/2020', 1000,555);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (336,'online', '1/29/2021', 1000,556);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (337,'cash', '3/27/2021', 1000,557);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (338,'card', '7/3/2021', 1000,558);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (339,'online', '3/17/2021', 1000,559);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (3310,'cash', '11/6/2021', 1000,5510);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (3311,'card', '9/3/2021', 1000,5511);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (3312,'online', '12/26/2020', 1000,5512);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (3313,'cash', '4/11/2021', 1000,5513);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (3314,'card', '6/12/2021', 1500,5514);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (3315,'online', '10/15/2021', 1500,5515);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (3316,'cash', '2/1/2021', 1500,5516);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (3317,'card', '7/17/2021', 1500,5517);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (3318,'online', '11/1/2021', 1500,5518);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (3319,'cash', '5/10/2021', 500,5519);
+insert into payment_account (p_id,method,p_date,amount,res_id) values (3320,'card', '6/21/2021', 500,5520);
+
+insert into activity values (441, 'indoor', 881);
+insert into activity values (442, 'indoor', 882);
+insert into activity values (443, 'indoor', 883);
+insert into activity values (444, 'indoor', 884);
+insert into activity values (445, 'outdoor',885);
+insert into activity values (446, 'outdoor',886);
+insert into activity values (447, 'outdoor',887);
+insert into activity values (448, 'outdoor',888);
+insert into activity values (449, 'pool',889);
+insert into activity values (4410, 'pool',8810);
+insert into activity values (4411, 'pool', 8811);
+insert into activity values (4412, 'pool',8812);
+insert into activity values (4413, 'outdoor',8813);
+insert into activity values (4414, 'outdoor',8814);
+insert into activity values (4415, 'outdoor',8815);
+insert into activity values (4416, 'clubhouse',8816);
+insert into activity values (4417, 'clubhouse',8817);
+insert into activity values (4418, 'clubhouse',8818);
+insert into activity values (4419, 'clubhouse',8819);
+insert into activity values (4420, 'clubhouse',8820);
+
+
+insert into complaints (res_id, c_type) values (551, 'Water Leakage');
+insert into complaints (res_id, c_type) values (552, null);
+insert into complaints (res_id, c_type) values (553, null);
+insert into complaints (res_id, c_type) values (554, null);
+insert into complaints (res_id, c_type) values (555, null);
+insert into complaints (res_id, c_type) values (556, null);
+insert into complaints (res_id, c_type) values (557, null);
+insert into complaints (res_id, c_type) values (558, null);
+insert into complaints (res_id, c_type) values (559, 'Electricity outage');
+insert into complaints (res_id, c_type) values (5510, null);
+insert into complaints (res_id, c_type) values (5511, null);
+insert into complaints (res_id, c_type) values (5512, 'Broken walls');
+insert into complaints (res_id, c_type) values (5513, 'Water Leakage');
+insert into complaints (res_id, c_type) values (5514, 'Electricity outage');
+insert into complaints (res_id, c_type) values (5515, 'Noise Disturbance');
+insert into complaints (res_id, c_type) values (5516, 'Water Leakage');
+insert into complaints (res_id, c_type) values (5517, 'Electricity outage');
+insert into complaints (res_id, c_type) values (5518, null);
+insert into complaints (res_id, c_type) values (5519, null);
+insert into complaints (res_id, c_type) values (5520, 'Noise Disturbance');
+
+
+insert into has values (301,701),(302,702),(303,703),(304,704);
+
+insert into works_in values (881, 301);
+insert into works_in values (882, 302);
+insert into works_in values (883, 303);
+insert into works_in values (884, 304);
+insert into works_in values (885, 302);
+insert into works_in values (886, 304);
+insert into works_in values (887, 303);
+insert into works_in values (888, 301);
+insert into works_in values (889, 304);
+insert into works_in values (8810, 303);
+insert into works_in values (8811, 302);
+insert into works_in values (8812, 301);
+insert into works_in values (8813, 303);
+insert into works_in values (8814, 304);
+insert into works_in values (8815, 302);
+insert into works_in values (8816, 304);
+insert into works_in values (8817, 301);
+insert into works_in values (8818, 301);
+insert into works_in values (8819, 303);
+insert into works_in values (8820, 302);
+
+
+insert into opts_for values (551, 441);
+insert into opts_for values (552, 442);
+insert into opts_for values (553, 443);
+insert into opts_for values (554, 444);
+insert into opts_for values (555, 445);
+insert into opts_for values (556, 446);
+insert into opts_for values (557, 447);
+insert into opts_for values (558, 448);
+insert into opts_for values (559, 449);
+insert into opts_for values (5510, 4410);
+insert into opts_for values (5511, 4411);
+insert into opts_for values (5512, 4412);
+insert into opts_for values (5513, 4413);
+insert into opts_for values (5514, 4414);
+insert into opts_for values (5515, 4415);
+insert into opts_for values (5516, 4416);
+insert into opts_for values (5517, 4417);
+insert into opts_for values (5518, 4418);
+insert into opts_for values (5519, 4419);
+insert into opts_for values (5520, 4420);
+
+
+insert into rents values (991,551,'6/21/2021');
+insert into rents values (992,552,'6/27/2020');
+insert into rents values (993, 553,'8/21/2021');
+insert into rents values (994,554,'5/01/2020');
+insert into rents values (995,555,'12/21/2021');
+insert into rents values (996,556,'6/02/2021');
+insert into rents values (997,557,'3/21/2021');
+insert into rents values (998,558, '8/22/2021');
+insert into rents values (999,559,'6/21/2020');
+insert into rents values (9910,5510,'11/01/2019');
+insert into rents values (9911,5511, '3/31/2020');
+insert into rents values (9912,5512, '01/04/2019');
+insert into rents values (9913,5513, '11/14/2021');
+insert into rents values (9914,5514, '10/15/2020');
+insert into rents values (9915,5515, '4/21/2021');
+insert into rents values (9916,5516, '10/21/2019');
+insert into rents values (9917,5517, '7/10/2021');
+insert into rents values (9918,5518,'9/23/2020');
+insert into rents values (9919,5519, '2/27/2019');
+insert into rents values (9920,5520, '5/21/2020');
